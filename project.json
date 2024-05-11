@@ -21,8 +21,8 @@
         "org.gluu.agama.passkey.nickname": {},
         "org.gluu.agama.passkey.list": {},
         "org.gluu.agama.passkey.main": {
-            "scimClientId": "1201.44a51df1-491a-4efc-9483-3e0e73f38e33",
-            "scimClientSecret": "AWb2v05c5TxK"
+            "scimClientId": "1201.d12761dc-5336-4520-ae28-28af32bc633d",
+            "scimClientSecret": "67rschWwD7a9"
         }
     },
     "name": "agama-passkey"
