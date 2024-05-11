@@ -19,7 +19,10 @@
     "configs": {
         "org.gluu.agama.passkey.add": {},
         "org.gluu.agama.passkey.nickname": {},
-        "org.gluu.agama.passkey.list": {},
+        "org.gluu.agama.passkey.list": {
+            "scimClientId": "1201.d12761dc-5336-4520-ae28-28af32bc633d",
+            "scimClientSecret": "67rschWwD7a9"            
+        },
         "org.gluu.agama.passkey.main": {
             "scimClientId": "1201.d12761dc-5336-4520-ae28-28af32bc633d",
             "scimClientSecret": "67rschWwD7a9"
