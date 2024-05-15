@@ -24,8 +24,8 @@
             "scimClientSecret": "67rschWwD7a9"
         },
         "org.gluu.agama.passkey.main": {
-            "scimClientId": "1201.d12761dc-5336-4520-ae28-28af32bc633d",
-            "scimClientSecret": "67rschWwD7a9"
+            "scimClientId": "1201.23f650d0-9f9d-475f-90b0-1ff78c15e152",
+            "scimClientSecret": "nkhmfKlC7MK7irWKVW+bxg=="
         }
     },
     "name": "agama-passkey"
