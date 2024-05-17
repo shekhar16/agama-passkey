@@ -2,6 +2,7 @@
 Flow org.gluu.agama.passkey.list
      Basepath ""
      Inputs userData scimSetting
+Log "@info  userData  : " userData  "   scimSetting  "scimSetting
 // Declaration of uid and inum taken from userData
 inum = userData.inum
 uid = userData.uid
@@ -74,8 +75,8 @@ Repeat 10 times max
                obj.errorMessage = E.message
           When E is null
                // Ends the flow and returns the user's inum
-               it_gwoka = {success:true, data: { userId: inum }}
-               Finish it_gwoka
+               it_gsrfr = {success:true, data: { userId: inum }}
+               Finish it_gsrfr
 // End flow with error because it has exceeded the limit of attempts.
-it_nfpix = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_nfpix
+it_jrfzn = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_jrfzn
