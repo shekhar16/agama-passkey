@@ -2,7 +2,6 @@
 Flow org.gluu.agama.passkey.main
      Basepath ""
      Configs conf
-Log "@info  callback data " conf
 // Get Instance AuthenticationService
 authService = Call io.jans.as.server.service.AuthenticationService#class
 // Get Instance CdiUtil
@@ -28,8 +27,8 @@ Repeat 5 times max
                listTrigger = Trigger org.gluu.agama.passkey.list userData conf
                When listTrigger.success is true
                     // Finish with success userId
-                    it_qomtn = {success:true, data: { userId: userData.uid }}
-                    Finish it_qomtn
+                    it_cymdg = {success:true, data: { userId: userData.uid }}
+                    Finish it_cymdg
      When mainForm.loginWithPasskeyBtn is ""
           // Generates an assertion request without username
           detestable = Call fidoValidator assertionRequest null
@@ -48,8 +47,8 @@ Repeat 5 times max
                obj.errorMessage = E.message
           When E is null
                // Finish with success userId
-               it_hcksn = {success:true, data: { userId: verifyResponse }}
-               Finish it_hcksn
+               it_mtptn = {success:true, data: { userId: verifyResponse }}
+               Finish it_mtptn
      When mainForm.skipped is "skipped"
           // Displays the authentication event cancellation error
           obj.isAssertion = false
@@ -57,5 +56,5 @@ Repeat 5 times max
           obj.errorTitle = "Passkey authentication failed."
           obj.errorMessage = mainForm.errorMessage
 // When you have made the maximum number of attempts, the flow will be terminated.
-it_fcfin = {success:false, error: "Login attempt exceeded"}
-Finish it_fcfin
+it_tvrcg = {success:false, error: "Login attempt exceeded"}
+Finish it_tvrcg
